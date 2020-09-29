@@ -1,0 +1,10 @@
+C:\Users\81981\Desktop\.net课程作业\Format_Statistic\Format_Statistic\bin\Debug\Format_Statistic.exe.config
+C:\Users\81981\Desktop\.net课程作业\Format_Statistic\Format_Statistic\bin\Debug\Format_Statistic.exe
+C:\Users\81981\Desktop\.net课程作业\Format_Statistic\Format_Statistic\bin\Debug\Format_Statistic.pdb
+C:\Users\81981\Desktop\.net课程作业\Format_Statistic\Format_Statistic\obj\Debug\Format_Statistic.csprojAssemblyReference.cache
+C:\Users\81981\Desktop\.net课程作业\Format_Statistic\Format_Statistic\obj\Debug\Format_Statistic.BaseForm.resources
+C:\Users\81981\Desktop\.net课程作业\Format_Statistic\Format_Statistic\obj\Debug\Format_Statistic.Properties.Resources.resources
+C:\Users\81981\Desktop\.net课程作业\Format_Statistic\Format_Statistic\obj\Debug\Format_Statistic.csproj.GenerateResource.cache
+C:\Users\81981\Desktop\.net课程作业\Format_Statistic\Format_Statistic\obj\Debug\Format_Statistic.csproj.CoreCompileInputs.cache
+C:\Users\81981\Desktop\.net课程作业\Format_Statistic\Format_Statistic\obj\Debug\Format_Statistic.exe
+C:\Users\81981\Desktop\.net课程作业\Format_Statistic\Format_Statistic\obj\Debug\Format_Statistic.pdb

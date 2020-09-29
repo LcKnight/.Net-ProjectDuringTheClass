@@ -1,0 +1,6 @@
+C:\Users\81981\Desktop\.net课程作业\HelloWorld\HelloWorld\bin\Debug\HelloWorld.exe.config
+C:\Users\81981\Desktop\.net课程作业\HelloWorld\HelloWorld\bin\Debug\HelloWorld.exe
+C:\Users\81981\Desktop\.net课程作业\HelloWorld\HelloWorld\bin\Debug\HelloWorld.pdb
+C:\Users\81981\Desktop\.net课程作业\HelloWorld\HelloWorld\obj\Debug\HelloWorld.csproj.CoreCompileInputs.cache
+C:\Users\81981\Desktop\.net课程作业\HelloWorld\HelloWorld\obj\Debug\HelloWorld.exe
+C:\Users\81981\Desktop\.net课程作业\HelloWorld\HelloWorld\obj\Debug\HelloWorld.pdb

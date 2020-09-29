@@ -1,0 +1,7 @@
+C:\Users\81981\Desktop\.net课程作业\PrimeNumber\PrimeNumber\bin\Debug\PrimeNumber.exe.config
+C:\Users\81981\Desktop\.net课程作业\PrimeNumber\PrimeNumber\bin\Debug\PrimeNumber.exe
+C:\Users\81981\Desktop\.net课程作业\PrimeNumber\PrimeNumber\bin\Debug\PrimeNumber.pdb
+C:\Users\81981\Desktop\.net课程作业\PrimeNumber\PrimeNumber\obj\Debug\PrimeNumber.csprojAssemblyReference.cache
+C:\Users\81981\Desktop\.net课程作业\PrimeNumber\PrimeNumber\obj\Debug\PrimeNumber.csproj.CoreCompileInputs.cache
+C:\Users\81981\Desktop\.net课程作业\PrimeNumber\PrimeNumber\obj\Debug\PrimeNumber.exe
+C:\Users\81981\Desktop\.net课程作业\PrimeNumber\PrimeNumber\obj\Debug\PrimeNumber.pdb

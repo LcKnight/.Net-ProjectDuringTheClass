@@ -1,0 +1,10 @@
+C:\Users\81981\Desktop\.net课程作业\QuestionGeneration\QuestionGeneration\bin\Debug\QuestionGeneration.exe.config
+C:\Users\81981\Desktop\.net课程作业\QuestionGeneration\QuestionGeneration\bin\Debug\QuestionGeneration.exe
+C:\Users\81981\Desktop\.net课程作业\QuestionGeneration\QuestionGeneration\bin\Debug\QuestionGeneration.pdb
+C:\Users\81981\Desktop\.net课程作业\QuestionGeneration\QuestionGeneration\obj\Debug\QuestionGeneration.csprojAssemblyReference.cache
+C:\Users\81981\Desktop\.net课程作业\QuestionGeneration\QuestionGeneration\obj\Debug\QuestionGeneration.Form1.resources
+C:\Users\81981\Desktop\.net课程作业\QuestionGeneration\QuestionGeneration\obj\Debug\QuestionGeneration.Properties.Resources.resources
+C:\Users\81981\Desktop\.net课程作业\QuestionGeneration\QuestionGeneration\obj\Debug\QuestionGeneration.csproj.GenerateResource.cache
+C:\Users\81981\Desktop\.net课程作业\QuestionGeneration\QuestionGeneration\obj\Debug\QuestionGeneration.csproj.CoreCompileInputs.cache
+C:\Users\81981\Desktop\.net课程作业\QuestionGeneration\QuestionGeneration\obj\Debug\QuestionGeneration.exe
+C:\Users\81981\Desktop\.net课程作业\QuestionGeneration\QuestionGeneration\obj\Debug\QuestionGeneration.pdb

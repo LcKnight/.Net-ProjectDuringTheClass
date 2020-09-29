@@ -1,0 +1,14 @@
+C:\Users\81981\Desktop\.net课程作业\Accounts\Accounts\bin\Debug\Accounts.exe.config
+C:\Users\81981\Desktop\.net课程作业\Accounts\Accounts\bin\Debug\Accounts.exe
+C:\Users\81981\Desktop\.net课程作业\Accounts\Accounts\bin\Debug\Accounts.pdb
+C:\Users\81981\Desktop\.net课程作业\Accounts\Accounts\obj\Debug\Accounts.csprojAssemblyReference.cache
+C:\Users\81981\Desktop\.net课程作业\Accounts\Accounts\obj\Debug\Accounts.Bank.resources
+C:\Users\81981\Desktop\.net课程作业\Accounts\Accounts\obj\Debug\Accounts.BaseForm.resources
+C:\Users\81981\Desktop\.net课程作业\Accounts\Accounts\obj\Debug\Accounts.Properties.Resources.resources
+C:\Users\81981\Desktop\.net课程作业\Accounts\Accounts\obj\Debug\Accounts.csproj.GenerateResource.cache
+C:\Users\81981\Desktop\.net课程作业\Accounts\Accounts\obj\Debug\Accounts.csproj.CoreCompileInputs.cache
+C:\Users\81981\Desktop\.net课程作业\Accounts\Accounts\obj\Debug\Accounts.exe
+C:\Users\81981\Desktop\.net课程作业\Accounts\Accounts\obj\Debug\Accounts.pdb
+C:\Users\81981\Desktop\.net课程作业\Accounts\Accounts\obj\Debug\Accounts.Register.resources
+C:\Users\81981\Desktop\.net课程作业\Accounts\Accounts\obj\Debug\Accounts.ATM.resources
+C:\Users\81981\Desktop\.net课程作业\Accounts\Accounts\obj\Debug\Accounts.BankManager.resources
