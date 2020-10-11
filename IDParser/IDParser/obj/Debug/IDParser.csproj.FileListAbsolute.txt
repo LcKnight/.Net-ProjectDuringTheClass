@@ -1,0 +1,10 @@
+C:\Users\81981\Desktop\.net课程作业\IDParser\IDParser\bin\Debug\IDParser.exe.config
+C:\Users\81981\Desktop\.net课程作业\IDParser\IDParser\bin\Debug\IDParser.exe
+C:\Users\81981\Desktop\.net课程作业\IDParser\IDParser\bin\Debug\IDParser.pdb
+C:\Users\81981\Desktop\.net课程作业\IDParser\IDParser\obj\Debug\IDParser.csprojAssemblyReference.cache
+C:\Users\81981\Desktop\.net课程作业\IDParser\IDParser\obj\Debug\IDParser.Form1.resources
+C:\Users\81981\Desktop\.net课程作业\IDParser\IDParser\obj\Debug\IDParser.Properties.Resources.resources
+C:\Users\81981\Desktop\.net课程作业\IDParser\IDParser\obj\Debug\IDParser.csproj.GenerateResource.cache
+C:\Users\81981\Desktop\.net课程作业\IDParser\IDParser\obj\Debug\IDParser.csproj.CoreCompileInputs.cache
+C:\Users\81981\Desktop\.net课程作业\IDParser\IDParser\obj\Debug\IDParser.exe
+C:\Users\81981\Desktop\.net课程作业\IDParser\IDParser\obj\Debug\IDParser.pdb
