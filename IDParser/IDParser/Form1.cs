@@ -16,6 +16,7 @@ using System.Windows.Forms;
 using System.Collections.Concurrent;
 using System.Text.RegularExpressions;
 using System.Threading;
+using System.Collections;
 
 namespace IDParser
 {
@@ -30,6 +31,10 @@ namespace IDParser
         //private const string BingUrl = "https://cn.bing.com/search?q=";
         //private const string GoogleUrl = "https://cn.bing.com/search?q=";
         //private const string SogouUrl = "https://www.sogou.com/web?query=";
+
+        private static ConcurrentStack<string> ID;//ID设置不重复列表
+        private static ConcurrentStack<string> Url;//设置Url不重复列表
+
         private static string[] SearchEngines = { "http://www.baidu.com/s?wd=", "http://cn.bing.com/search?q="
                                                  ,"http://cn.bing.com/search?q=","http://www.sogou.com/web?query="};
         private const string regexPattern= @"[1-9]\d{5}(18|19|20|(3\d))\d{2}((0[1-9])|(1[0-2]))(([0-2][1-9])|10|20|30|31)\d{3}[0-9Xx]";
@@ -45,6 +50,8 @@ namespace IDParser
         public Form1()
         {
             InitializeComponent();
+            ID = new ConcurrentStack<string>();
+            Url = new ConcurrentStack<string>();
             httpClient = new HttpClient();
             httpClient.Timeout = TimeSpan.FromMilliseconds(1000);
             
@@ -64,12 +71,23 @@ namespace IDParser
                     int i = 0;
                     while (i < matches.Count)
                     {
-                        ListViewItem lvi = new ListViewItem();
-                        lvi.Text = matches[i].Value;
-                        lvi.SubItems.Add(url);
-                        this.Invoke(new Action(() => { this.listView1.Items.Add(lvi); }));
-                        //this.listView1.Items.Add(lvi);
-                        i++;
+                        if(ID!=null && ID.Contains(matches[i].Value))
+                        {
+                            //判断是否重复
+                            i++;
+                            
+                        }
+                        else
+                        {
+                            ID.Push(matches[i].Value);
+                            ListViewItem lvi = new ListViewItem();
+                            lvi.Text = matches[i].Value;
+                            lvi.SubItems.Add(url);
+                            this.Invoke(new Action(() => { this.listView1.Items.Add(lvi); }));
+                            //this.listView1.Items.Add(lvi);
+                            i++;
+                        }
+
                     }
                 }
 
@@ -99,8 +117,18 @@ namespace IDParser
                     int i = 0;
                     while (i < matches.Count)
                     {
-                        CQ.Enqueue(matches[i].Value);
-                        i++;
+                        if(Url!=null&&Url.Contains(matches[i].Value))
+                        {
+                            //判断是否重复
+                            i++;
+                            
+                        }
+                        else
+                        {
+                            Url.Push(matches[i].Value);
+                            CQ.Enqueue(matches[i].Value);
+                            i++;
+                        }
                     }
                 }
 
@@ -132,8 +160,8 @@ namespace IDParser
             {
 
                 //text = httpClient.GetAsync(url).Result;
-                await Task.Run(()=>GetID(url));
-
+                
+                await Task.Run(() => GetID(url));
                 await Task.Run(() => GetUrl(url));
 
 

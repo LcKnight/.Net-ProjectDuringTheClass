@@ -37,13 +37,14 @@
             this.BingradioButton = new System.Windows.Forms.RadioButton();
             this.GoogleradioButton = new System.Windows.Forms.RadioButton();
             this.SogouradioButton = new System.Windows.Forms.RadioButton();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Searchbutton
             // 
             this.Searchbutton.Location = new System.Drawing.Point(216, 71);
             this.Searchbutton.Name = "Searchbutton";
-            this.Searchbutton.Size = new System.Drawing.Size(75, 23);
+            this.Searchbutton.Size = new System.Drawing.Size(77, 31);
             this.Searchbutton.TabIndex = 0;
             this.Searchbutton.Text = "搜索";
             this.Searchbutton.UseVisualStyleBackColor = true;
@@ -124,11 +125,21 @@
             this.SogouradioButton.Text = "Sogou";
             this.SogouradioButton.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(358, 49);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(309, 45);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "建议老师勾选百度\r\n然后搜索带有身份证的关键词\r\n等待1-2分钟左右 就能搜索到可观的身份证号";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.SogouradioButton);
             this.Controls.Add(this.GoogleradioButton);
             this.Controls.Add(this.BingradioButton);
@@ -155,6 +166,7 @@
         private System.Windows.Forms.RadioButton BingradioButton;
         private System.Windows.Forms.RadioButton GoogleradioButton;
         private System.Windows.Forms.RadioButton SogouradioButton;
+        private System.Windows.Forms.Label label1;
     }
 }
 
