@@ -1,4 +1,9 @@
-﻿using System;
+﻿/**
+ * author:lcknight
+ * repo:https://github.com/LcKnight/.Net-ProjectDuringTheClass
+ * email:819818746@qq.com
+ * */
+using System;
 using System.Collections.Generic;
 using System.Data.SQLite;
 using System.Linq;
@@ -15,6 +20,7 @@ namespace StuManageSys
     class SqliteOp
     {
         private int Existflag=0;
+
         //Connection
         public SQLiteConnection dbConnection;
         //Command
@@ -23,7 +29,7 @@ namespace StuManageSys
         private SQLiteDataReader dataReader;
 
         private SQLiteConnectionStringBuilder dbConnectionstr;
-
+        private string logPath;
         //构造函数 负责查找数据库，建立数据库（连接）
         public SqliteOp(string ConnectionString)
         {
@@ -32,6 +38,7 @@ namespace StuManageSys
                 Existflag = 1;
             try
             {
+                logPath = "log.txt";
                 dbConnection = new SQLiteConnection(ConnectionString);
                 dbConnectionstr = new SQLiteConnectionStringBuilder();
                 dbConnectionstr.DataSource = ConnectionString;
@@ -44,17 +51,21 @@ namespace StuManageSys
                 MessageBox.Show(e.ToString());
             }
         }
+        public int GetExist()
+        {
+            return Existflag;
+        }
        //析构函数，负责最终结束数据库连接的生命周期
         ~SqliteOp()
         {
             if(dbCommand != null)
             {
-                dbCommand.Cancel();
+                dbCommand.Dispose();
             }
             dbCommand = null;
             if(dataReader != null)
             {
-                dataReader.Close();
+                dataReader.Dispose();
             }
             dataReader = null;
             //下面有问题 因为C#的垃圾回收机制会导致 dbConnection已经被销毁
@@ -89,7 +100,10 @@ namespace StuManageSys
             }
             dbConnection = null;
         }
+        public void log(string queryString)
+        {
 
+        }
         //执行Query语句
         public SQLiteDataReader ExecuteQuery(string queryString)
         {
@@ -98,6 +112,11 @@ namespace StuManageSys
                 dbCommand = dbConnection.CreateCommand();
                 dbCommand.CommandText = queryString;
                 dataReader = dbCommand.ExecuteReader();
+                using (StreamWriter sw = new StreamWriter(logPath, true))
+                {
+                    sw.WriteLine(DateTime.Now + "  " + queryString);
+                }
+                
             }
             catch (Exception e)
             {
@@ -117,7 +136,7 @@ namespace StuManageSys
         //create Table
         public SQLiteDataReader CreateTable(string tableName,string[] colNames, string[] colTypes)
         {
-            string queryString = "Create Table if not Exists " + "(" + colNames[0] + " " + colTypes[0];
+            string queryString = "Create Table  if not Exists " + tableName + "(" + colNames[0] + " " + colTypes[0];
             for(int i=1;i<colNames.Length; i++)
             {
                 queryString += "," + colNames[i] + " " + colTypes[i];

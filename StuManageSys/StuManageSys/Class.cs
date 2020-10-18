@@ -28,6 +28,11 @@ namespace StuManageSys
             this.Major = Major;
             this.Grade = Grade;
         }
+        public int GetClassId() { return ClassId; }
+        public int GetSchoolId() { return SchoolId; }
+        public int GetNums() { return Nums; }
+        public string GetMajor() { return Major; }
+        public int GetGrade() { return Grade; }
         public string[] ToStrings()
         {
             return new string[] { ClassId.ToString(), SchoolId.ToString(), Nums.ToString(), Major, Grade.ToString() };

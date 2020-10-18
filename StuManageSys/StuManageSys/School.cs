@@ -15,6 +15,12 @@ namespace StuManageSys
             this.SchoolId = SchoolId;
             this.SchoolName = SchoolName;
         }
+        public int GetSchoolId()
+        {
+            return SchoolId;
+        }
+        public string GetSchoolName()
+        { return SchoolName; }
         public string[] ToStrings()
         {
             return new string[] { SchoolId.ToString(), SchoolName };

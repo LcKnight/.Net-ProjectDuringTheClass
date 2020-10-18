@@ -1,0 +1,10 @@
+2020/10/18 15:55:33  Select * from Student
+2020/10/18 15:55:33  Select * from Class
+2020/10/18 15:55:33  Select * from School
+2020/10/18 15:55:36  Delete From Student Where StudentId='94' And StudentId='94' And StudentName='金泽辉' And ClassId='7' And Sex='男' And Age='19'
+2020/10/18 15:57:14  Select * from Student
+2020/10/18 15:57:14  Select * from Class
+2020/10/18 15:57:14  Select * from School
+2020/10/18 15:57:51  Select * from Student
+2020/10/18 15:57:51  Select * from Class
+2020/10/18 15:57:51  Select * from School
