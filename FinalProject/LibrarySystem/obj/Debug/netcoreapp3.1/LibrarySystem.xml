@@ -1,0 +1,206 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LibrarySystem</name>
+    </assembly>
+    <members>
+        <member name="M:LibrarySystem.Controllers.UserController.Register(System.String,System.String)">
+            <summary>
+            用户注册，若成功返回用户信息携带token，若用户名重复，返回409
+            </summary>
+            <param name="username">用户名</param>
+            <param name="password">密码</param>
+            <returns></returns>
+        </member>
+        <member name="M:LibrarySystem.Controllers.UserController.Login(System.String,System.String)">
+            <summary>
+            用户登录，成功返回用户信息，用户不存在返回404。密码错误返回417
+            </summary>
+            <param name="username"></param>
+            <param name="password"></param>
+            <returns></returns>
+        </member>
+        <member name="T:LibrarySystem.Models.Book">
+            <summary>
+            书籍
+            </summary>
+        </member>
+        <member name="P:LibrarySystem.Models.Book.BookId">
+            <summary>
+            书籍主键
+            </summary>
+        </member>
+        <member name="P:LibrarySystem.Models.Book.BookName">
+            <summary>
+            书籍姓名
+            </summary>
+        </member>
+        <member name="P:LibrarySystem.Models.Book.ISBN">
+            <summary>
+            书籍ISBN
+            </summary>
+        </member>
+        <member name="P:LibrarySystem.Models.Book.Author">
+            <summary>
+            书籍作者
+            </summary>
+        </member>
+        <member name="P:LibrarySystem.Models.Book.Category">
+            <summary>
+            书籍类别
+            </summary>
+        </member>
+        <member name="P:LibrarySystem.Models.Book.PositionId">
+            <summary>
+            书籍的PositionId
+            </summary>
+        </member>
+        <member name="P:LibrarySystem.Models.Book.PState">
+            <summary>
+            书籍对应位置的状态，如在书架，不在书架
+            </summary>
+        </member>
+        <member name="P:LibrarySystem.Models.Book.BType">
+            <summary>
+            书籍的借出状态
+            </summary>
+        </member>
+        <member name="T:LibrarySystem.Models.Library">
+            <summary>
+            图书馆
+            </summary>
+        </member>
+        <member name="P:LibrarySystem.Models.Library.LibraryId">
+            <summary>
+            图书馆主键
+            </summary>
+        </member>
+        <member name="P:LibrarySystem.Models.Library.LibraryName">
+            <summary>
+            图书馆名称
+            </summary>
+        </member>
+        <member name="T:LibrarySystem.Models.Manager">
+            <summary>
+            管理员
+            </summary>
+        </member>
+        <member name="P:LibrarySystem.Models.Manager.ManagerId">
+            <summary>
+            Id主键
+            </summary>
+        </member>
+        <member name="P:LibrarySystem.Models.Manager.ManagerAccount">
+            <summary>
+            账号
+            </summary>
+        </member>
+        <member name="P:LibrarySystem.Models.Manager.Pwd">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:LibrarySystem.Models.Manager.ManagerName">
+            <summary>
+            用户姓名
+            </summary>
+        </member>
+        <member name="P:LibrarySystem.Models.Manager.Token">
+            <summary>
+            登陆凭证
+            </summary>
+        </member>
+        <member name="T:LibrarySystem.Models.Position">
+            <summary>
+            存书位置
+            </summary>
+        </member>
+        <member name="P:LibrarySystem.Models.Position.PositionId">
+            <summary>
+            每个存书位置主键
+            </summary>
+        </member>
+        <member name="P:LibrarySystem.Models.Position.ShelfId">
+            <summary>
+            书架Id
+            </summary>
+        </member>
+        <member name="P:LibrarySystem.Models.Position.LayerIndex">
+            <summary>
+            层数
+            </summary>
+        </member>
+        <member name="P:LibrarySystem.Models.Position.Index">
+            <summary>
+            在某层的Index索引
+            </summary>
+        </member>
+        <member name="P:LibrarySystem.Models.Position.Tag">
+            <summary>
+            该位置是否有书
+            </summary>
+        </member>
+        <member name="T:LibrarySystem.Models.Shelf">
+            <summary>
+            书架
+            </summary>
+        </member>
+        <member name="P:LibrarySystem.Models.Shelf.ShelfId">
+            <summary>
+            书架主键
+            </summary>
+        </member>
+        <member name="P:LibrarySystem.Models.Shelf.Capacity">
+            <summary>
+            书架容量
+            </summary>
+        </member>
+        <member name="P:LibrarySystem.Models.Shelf.Layers">
+            <summary>
+            书架的层数
+            </summary>
+        </member>
+        <member name="P:LibrarySystem.Models.Shelf.LibraryId">
+            <summary>
+            书架对应的图书馆Id
+            </summary>
+        </member>
+        <member name="P:LibrarySystem.Models.Shelf.Category">
+            <summary>
+            书架摆放的书的类型
+            </summary>
+        </member>
+        <member name="T:LibrarySystem.Models.User">
+            <summary>
+            普通用户
+            </summary>
+        </member>
+        <member name="P:LibrarySystem.Models.User.UserId">
+            <summary>
+            ID主键
+            </summary>
+        </member>
+        <member name="P:LibrarySystem.Models.User.UserAccount">
+            <summary>
+            用户账号
+            </summary>
+        </member>
+        <member name="P:LibrarySystem.Models.User.Pwd">
+            <summary>
+            密码
+            </summary>
+            
+        </member>
+        <member name="P:LibrarySystem.Models.User.UserName">
+            <summary>
+            用户姓名
+            </summary>
+        </member>
+        <member name="P:LibrarySystem.Models.User.Token">
+            <summary>
+            登陆凭证
+            </summary>
+            
+        </member>
+    </members>
+</doc>

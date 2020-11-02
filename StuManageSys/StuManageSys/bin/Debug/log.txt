@@ -8,3 +8,8 @@
 2020/10/18 15:57:51  Select * from Student
 2020/10/18 15:57:51  Select * from Class
 2020/10/18 15:57:51  Select * from School
+2020/10/19 2:06:06  Select * from Student
+2020/10/19 2:06:07  Select * from Class
+2020/10/19 2:06:07  Select * from School
+2020/10/19 2:07:36  Select * from School
+2020/10/19 2:07:36  Insert Into School Values ('5','家里蹲大学')
